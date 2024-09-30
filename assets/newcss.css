@@ -163,7 +163,7 @@ img {
 }
 .header {
   width: 100%;
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
@@ -176,9 +176,14 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;   
 }
 
-.nav__logo,
+.nav__logo{
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+}
+
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
@@ -285,8 +290,7 @@ img {
 
 .home__blob {
   width: 200px;
-  fill: var(--first-color);
-  /* fill: hsl(69, 69%, 61%); */
+  fill: #fff;
 }
 .home__blob-img {
   width: 180%;
@@ -427,6 +431,12 @@ img {
 .about__buttons {
   display: flex;
   justify-content: center;
+}
+.about__buttonss {
+  display: flex;
+  position: relative;
+  left: 190px;
+  top: -66px;
 }
 
 /*===================== SKILLS =========================*/
@@ -695,6 +705,9 @@ img {
 
 /*================== Portfolio ==================*/
 
+.portfoliosection{
+  overflow: initial;
+}
 .portfolio__container {
   overflow: initial;
 }
@@ -713,6 +726,7 @@ img {
 }
 .portfolio__description {
   margin-bottom: var(--mb-0-75);
+  text-align: justify;
 }
 .portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);
@@ -810,16 +824,26 @@ img {
 .footer__title {
   font-size: var(--h1-font-size);
   margin-bottom: var(--mb-0-25);
+  position: relative;
+  top: 70px;
+  left: 337px;
 }
 
 .footer__subtitle {
-  font-size: var(--small-font-size);
+  font-size: var(--h3-font-size);
+  position: relative;
+  text-align: center;
+  top: -70px;
+  white-space: nowrap;   
 }
 
 .footer__links {
   display: flex;
   flex-direction: column;
-  row-gap: 1.5rem;
+  row-gap: 1rem;
+  position: relative;
+  top: 150px;
+  right: 490px;
 }
 
 .footer__link:hover {
@@ -841,7 +865,9 @@ img {
   font-size: var(--smaller-font-size);
   text-align: center;
   color: var(--text-color-light);
-  margin-top: var(--mb-3);
+  /* margin-top: var(--mb-3); */
+  position: relative;
+  top: 50px;
 }
 
 .footer__title,
@@ -851,6 +877,14 @@ img {
   color: #fff;
 }
 
+.line-div {
+  position: relative;
+  top: -60px;
+  left: 20%;
+  border-top: 5px solid #ffffff;
+  box-sizing: border-box;
+  width: 60%;
+}
 /*==================== Scroll Up ==================*/
 
 .scrollup {
@@ -1073,6 +1107,10 @@ img {
     font-size: 1.75rem;
   }
 
+  .qualification__tab {
+    position: relative;
+    right: 50px;
+  }
   .qualification__tabs {
     justify-content: center;
   }
