@@ -1117,25 +1117,37 @@
             </div>
 
             <div class="contact__content">
-              <label for="" class="content__label">Message</label>
+              <label for="message" class="content__label">Message</label>
               <textarea
-                name=""
-                id=""
+                id="message"
                 cols="0"
                 rows="7"
                 class="contact__input"
               ></textarea>
             </div>
-
+            
             <div>
               <a
-                href=" mailto: raffii450@gmail.com"
+                href="#"
                 class="button button--flex"
+                id="sendMessage"
               >
                 Send Message
                 <i class="uil uil-message button__icon"></i>
               </a>
             </div>
+            
+            <script>
+              document.getElementById("sendMessage").addEventListener("click", function() {
+                var message = document.getElementById("message").value;
+                var email = "raffii450@gmail.com";
+                var subject = "Send Message!";
+                var body = encodeURIComponent(message);
+            
+                window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+              });
+            </script>
+            
           </form>
         </div>
       </section>
