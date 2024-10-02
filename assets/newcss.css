@@ -934,10 +934,10 @@ img {
 
 /* For Small Devices */
 @media screen and (max-width: 350px) {
-  .container {
+  /* .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
-  }
+  } */
 
   .nav__menu {
     padding: 2rem 0.25rem 4rem;
@@ -953,6 +953,17 @@ img {
 
   .home__blob {
     width: 180px;
+  }
+
+  .about__buttons{
+    position: relative;
+    left: 70px;
+  }
+
+  .about__buttonss{
+    position: relative;
+    top: -65px;
+    left: -20px;
   }
 
   .skills__icon,
@@ -981,6 +992,50 @@ img {
 
   .project__img {
     width: 200px;
+  }
+
+  .footer__subtitle{
+    font-size: var(--h4-font-size);
+    position: relative;
+    left: 20px;
+    top: -60px;
+    white-space: wrap;
+    justify-content: center;  
+  }
+
+  .line-div{
+    position: relative;
+    top: -180px;
+    left: 15px;
+    width: 250px; 
+  }
+
+  .footer__title{
+  position: relative;
+    left: 35%;
+    top: 80px;
+  }
+
+  .footer__links{
+    position: relative;
+    left: 85px;
+    top: -30px;
+  }
+
+  .footer__link2{
+    position: relative;
+    top: -45px;
+    left: 50px;
+  }
+
+  .footer__bg{
+    position:relative;
+    top: 1px;
+    padding: 2rem 0 0rem;
+  }
+
+  .footer__copy{
+    top: -20px;
   }
 }
 
@@ -1101,6 +1156,7 @@ img {
   .about__buttons {
     justify-content: initial;
   }
+
 
   .skills__icon,
   .skills__arrow {
