@@ -1040,6 +1040,124 @@ img {
   }
 }
 
+/* For iPhone 8 */
+@media screen and (max-width: 375px) {
+  .nav__menu {
+    padding: 1rem 0.5rem 1.25rem; /* Sesuaikan padding agar pas */
+  }
+
+  .nav__list {
+    column-gap: 0;
+    padding: 0;
+  }
+
+  .home__content {
+    grid-template-columns: 1fr; /* Layout satu kolom */
+    padding: 0.5rem; /* Spasi yang lebih kecil */
+  }
+
+  .home__blob {
+    width: 120px; /* Ukuran gambar lebih kecil */
+    margin: 0 auto; /* Letakkan gambar di tengah */
+  }
+
+  .about__buttons {
+    position: relative;
+    left: 10px; /* Offset kiri yang lebih kecil */
+    margin-bottom: 1rem; /* Jarak bawah untuk spasi */
+  }
+
+  .about__buttonss {
+    position: relative;
+    top: -20px; /* Kurangi top untuk menyesuaikan panjang */
+    left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .skills__icon,
+  .skills__arrow {
+    font-size: 1rem; /* Ukuran font lebih kecil */
+  }
+
+  .skills__title {
+    font-size: var(--small-font-size); /* Ukuran font lebih kecil */
+  }
+
+  .qualification__data {
+    gap: 0.3rem; /* Kurangi gap antar elemen */
+    margin-bottom: 1rem; /* Jarak bawah untuk pengaturan konten */
+  }
+
+  .services__container {
+    justify-content: center;
+    padding: 1rem 0; /* Padding minimal untuk mobile */
+  }
+
+  .services__content {
+    padding-right: 0.25rem; /* Kurangi padding */
+  }
+
+  .services__modal {
+    padding: 0 0.25rem; /* Kurangi padding */
+  }
+
+  .project__img {
+    width: 150px; /* Ukuran gambar lebih kecil */
+    margin: 0 auto; /* Letakkan gambar di tengah */
+    margin-bottom: 1rem; /* Tambah jarak bawah untuk tampilan lebih rapi */
+  }
+
+  .footer__subtitle {
+    font-size: var(--small-font-size); /* Ukuran font lebih kecil */
+    position: relative;
+    left: 0;
+    top: -30px; /* Sesuaikan top */
+    white-space: normal; /* Izinkan teks wrap */
+    text-align: center; /* Posisikan teks di tengah */
+  }
+
+  .line-div {
+    position: relative;
+    top: -100px; /* Kurangi jarak vertikal */
+    left: 0;
+    width: 180px; /* Lebar sesuai layar iPhone 8 */
+    margin: 0 auto; /* Centering div */
+  }
+
+  .footer__title {
+    position: relative;
+    left: 0;
+    top: 30px; /* Sesuaikan top */
+    text-align: center;
+  }
+
+  .footer__links {
+    position: relative;
+    left: 0;
+    top: -10px; /* Sesuaikan top */
+    text-align: center; /* Letakkan link di tengah */
+  }
+
+  .footer__link2 {
+    position: relative;
+    top: -20px;
+    left: 0;
+    text-align: center; /* Teks di tengah */
+  }
+
+  .footer__bg {
+    position: relative;
+    top: 0;
+    padding: 1rem 0; /* Padding yang lebih ringkas */
+  }
+
+  .footer__copy {
+    top: -5px;
+    text-align: center; /* Teks di tengah */
+  }
+}
+
+
 /* For medium Devices */
 @media screen and (min-width: 568px) {
   .home__content {
